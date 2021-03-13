@@ -1,0 +1,30 @@
+<p>
+    <mat-toolbar color="primary">
+        <span>Listado de Citas</span>
+    </mat-toolbar>
+</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Cliente</th>
+            <th>Vendedor</th>
+            <th>Fecha</th>
+        </tr>
+    </thead>
+    <tbody>
+         <!-- citaCollection hace referencia a nuestra variable que ya contiene el listado del json
+        *ngFor es una directiva componente de angular, que viene siendo un for de php 
+        let significa que va tomar un valor, y lo almacenara en la variable, en este caso cita
+        puede ser cualquier nombre de var no necesariamente la del modelo
+        esto lo va tomar de of nuestra varibale que ya tiene la colleccion del json-->
+        <tr *ngFor="let cita of citaCollection">
+              <!--    posteriormente aqui accedemos al valor tomado atravez de cita, y obtenemos el vlaor del atributo cliente, vendor y fecha-->
+            <td>{{cita.cliente}}</td>
+            <td>{{cita.vendor}}</td>
+            <td>{{cita.fecha | date:'short'}}</td>
+            <!--   el pipe | significa que podemos aplicar un filtro, ya que al mapear el json la fecha se toma como string y hay
+            que especificarle a angualar que es una fecha-->
+        </tr>
+    </tbody>
+</table>

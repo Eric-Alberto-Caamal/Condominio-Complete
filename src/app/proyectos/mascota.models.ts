@@ -1,0 +1,8 @@
+export class Mascota{
+    constructor(
+       public nombre:string,
+       public raza:string,
+       public tipoMas:string
+    ){}
+
+}

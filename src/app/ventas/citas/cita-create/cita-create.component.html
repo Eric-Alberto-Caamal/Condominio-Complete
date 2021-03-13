@@ -1,0 +1,60 @@
+<div class="header">
+    <p>
+        <mat-toolbar color="primary">
+            <span class="title-center">Formulario</span>
+        </mat-toolbar>
+    </p>
+</div>
+
+<form class="example-form">
+    <div class="form-group">
+        <p>
+            <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Cliente</mat-label>
+                <input  matInput type="text" name="cliente" id="cliente"
+                [(ngModel)]= "cita.cliente" placeholder="Cliente">
+              </mat-form-field>
+        </p>
+    </div>
+    <div class="form-group">
+        <p>
+              <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>ClienteId</mat-label>
+                <input  matInput type="text" name="clienteId" id="clienteId"
+                [(ngModel)]= "cita.clienteId"  placeholder="ClienteId">
+              </mat-form-field>
+        </p> 
+    </div>
+    <div class="form-group">
+        <p>
+              <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Vendor</mat-label>
+                <input  matInput type="text" name="vendor" id="vendor"
+                [(ngModel)]= "cita.vendor"  placeholder="vendor">
+              </mat-form-field>
+        </p> 
+    </div>
+    <div class="form-group">
+        <p>
+              <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>VendorId</mat-label>
+                <input  matInput type="text" name="vendorId" id="vendorId"
+                [(ngModel)]= "cita.vendorId"  placeholder="VendorId">
+              </mat-form-field>
+        </p> 
+    </div>
+    <div class="form-group">
+        <p>
+              <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Fecha</mat-label>
+                <input type="date" matInput name="fecha" id="fecha"
+                [(ngModel)] =  "cita.fecha" placeholder="Fecha">
+              </mat-form-field>
+        </p> 
+    </div>
+    <div>
+        <button mat-raised-button color="primary" (click) = "guardarInformacion()">Validar</button> 
+    </div>
+</form>
+<br>
+{{diagnostic}}

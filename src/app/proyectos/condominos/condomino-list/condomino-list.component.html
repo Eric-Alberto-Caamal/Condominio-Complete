@@ -1,0 +1,36 @@
+<p>
+    <mat-toolbar>
+        <span class="title">Listado de Condominos</span>
+    </mat-toolbar>
+</p>
+
+<table class="example-full-width" cellspacing="0">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido Paterno</th>
+            <th>Apellido Materno</th>
+            <th>Sexo</th>
+            <th>Fecha Nacimiento</th>
+            <th>NSS</th>
+            <th>Correo</th>
+            <th>
+                Acciones
+            </th>
+        </tr>
+    </thead>
+    <tbody> 
+        <tr *ngFor = "let condomino of condominoCollection; let i = index"  >
+            <td>{{condomino.nombre}}</td>
+            <td>{{condomino.apellidoPat}}</td>
+            <td>{{condomino.apellidoMat}}</td>
+            <td>{{condomino.sexo}}</td>
+            <td>{{condomino.fechaNacimiento | date:'short'}}</td>
+            <td>{{condomino.numSeguro}}</td>
+            <td>{{condomino.correo}}</td>
+            <td> 
+                <button mat-raised-button color="accent" (click) ="editar(i)" >Editar</button>
+             </td>
+        </tr>
+    </tbody>
+</table>

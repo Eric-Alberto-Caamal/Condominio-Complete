@@ -1,0 +1,77 @@
+
+<div class="segmento3">
+    <mat-toolbar>
+        <span class="title">Datos de Mascotas</span>
+    </mat-toolbar>
+</div>
+
+<table>
+    <thead>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+          
+        <td> 
+            
+            <span>Numero de Mascotas</span>
+            <mat-form-field class="example-full-width" appearance="outline">    
+            <input matInput placeholder="Numero de Mascotas" type="number" 
+            name="cantidad" id="cantidad"
+            [(ngModel)]= "datos.cantidad">
+            </mat-form-field>
+            <div >
+                <button mat-raised-button color="primary" (click) = "generateDatos(cantidad)">Generar campos</button> 
+            </div>
+            
+        </td>
+    </thead>
+</table>
+
+<form class="example-form">
+    <div class="form-control animated fadeIn" *ngFor="let dato of datos">
+        <h2 align="center"> Datos de la mascota {{ dato.referencia }} </h2>
+        <hr>
+        <table class="example-full-width" cellspacing="0">
+            <tr>
+                <td>
+                    <span>Nombre</span>
+                    <mat-form-field class="example-full-width" appearance="outline">    
+                        <input matInput placeholder="Nombre" 
+                        type="text" name="nombre" [id]="dato.nombre"
+                        [(ngModel)]= "dato.nombre">
+                    </mat-form-field>
+                </td>
+                <td>
+                    <span>Raza</span>
+                    <mat-form-field class="example-full-width" appearance="outline">
+                         <input matInput placeholder="Raza"
+                         type="text" name="raza" [id]="dato.raza"
+                         [(ngModel)]= "dato.raza">
+                    </mat-form-field>
+                </td>
+                <td>
+                    <span>Tipo de Mascota</span>
+                    <mat-form-field class="example-full-width" appearance="outline">
+                        <input matInput placeholder="Tipo de Mascota"
+                        type="text" name="tipoMast" [id]="dato.tipoMas"
+                        [(ngModel)]= "dato.tipoMas">
+                    </mat-form-field>
+                </td>
+          </tr>
+        </table>
+    </div>
+    <div class="buttonG" >
+        <button (click)="guardarMascota(datos)" mat-raised-button color="primary" *ngIf=" datos.length != 0 " > Guadar Datos </button> 
+    </div>
+
+</form>
+<br>

@@ -1,0 +1,23 @@
+.title{
+    margin: 0 auto;   
+}
+
+.example-form {
+    padding-top: 15px;
+    min-width: 150px;
+    max-width: 1100px;
+}
+.example-full-width {
+  width: 107%;
+}
+.example-width{
+    width: 97%;
+} 
+ td {
+   padding-left: 35px;
+}
+.buttonG{
+  padding-top: 10px;
+  padding-left: 35px;
+  padding-bottom: 10px;
+}

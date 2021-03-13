@@ -1,0 +1,83 @@
+<p>
+    <mat-toolbar>
+        <span class="title" text>Apartado de edición</span>
+    </mat-toolbar>
+</p>
+
+<form class="example-form">
+    <div class="form-control">
+        <table class="example-full-width" cellspacing="0">
+            <tr>
+                <td>
+                    <span>Nombres</span>
+                    <mat-form-field class="example-full-width" appearance="outline">    
+                        <input matInput placeholder="Nombres" 
+                        type="text" name="nombre" id="nombre"
+                        [(ngModel)]= "condomino.nombre" >
+                    </mat-form-field>
+                </td>
+                <td>
+                    <span>Apellido Paterno</span>
+                    <mat-form-field class="example-full-width" appearance="outline">
+                         <input matInput placeholder="Apellido Paterno"
+                         type="text" name="apellidoPat" id="apellidoPat"
+                         [(ngModel)]= "condomino.apellidoPat">
+                    </mat-form-field>
+                </td>
+                <td>
+                    <span>Apellido Materno</span>
+                    <mat-form-field class="example-full-width" appearance="outline">
+                        <input matInput placeholder="Apellido Materno"
+                        type="text" name="apellidoMat" id="apellidoMat"
+                        [(ngModel)]= "condomino.apellidoMat">
+                    </mat-form-field>
+                </td>
+          </tr>
+          <tr>
+            <td>
+                <span>Fecha Nacimiento</span>
+                <mat-form-field class="example-width" appearance="outline">    
+                    <input matInput 
+                    type="date" name="fechaNac" id="fechaNac"
+                    [(ngModel)]= "condomino.fechaNacimiento">
+                </mat-form-field>
+            </td>
+           
+            <td>
+                <span>NSS</span>
+                <mat-form-field class="example-width" appearance="outline">    
+                    <input matInput #nss placeholder="Ex. 72-79-56-08-040" value="72795608040" maxlength="11"
+                    name="nss" id="nss"
+                    [(ngModel)]= "condomino.numSeguro">
+                    <mat-hint align="end">{{nss.value.length}} / 11</mat-hint>
+                </mat-form-field>
+            </td>
+           
+            <td>
+                <span>Correo electrónico</span>
+              <mat-form-field class="example-full-width" appearance="outline">    
+                  <input matInput placeholder="Ex. Example@gmail.com"
+                  type="email" name="correo" id="correo"
+                  [(ngModel)]= "condomino.correo">
+              </mat-form-field>
+            </td>
+        
+          </tr>
+          <tr>
+             
+             
+            <td>
+                <span>Domicilio</span>
+              <mat-form-field class="example-full-width" appearance="outline">    
+                  <input matInput placeholder="Domicilio"
+                  type="text" name="domicilio" id="domicilio"
+                  [(ngModel)]= "condomino.domicilio">
+              </mat-form-field>
+            </td>
+          </tr>
+        </table>
+    </div>
+    <div class="buttonG">
+        <!-- <button mat-raised-button color="primary" (click) = "guardarCondomino()">Guardar</button>  -->
+    </div>
+</form>

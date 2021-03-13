@@ -1,0 +1,8 @@
+[
+    {"nombre":"Eric 1", "apellidoPat":"Caamal 1", "apellidoMat":"Tamayo 1", "sexo":"Masculino", "fechaNacimiento":"2021-02-23T18:25:43.511Z", "numSeguro":"82937505721", "correo":"eric@gmail.com"},
+    {"nombre":"Eric 2", "apellidoPat":"Caamal 2", "apellidoMat":"Tamayo 2", "sexo":"Masculino", "fechaNacimiento":"2021-02-23T18:25:43.511Z", "numSeguro":"82937505721", "correo":"eric@gmail.com"},
+    {"nombre":"Eric 3", "apellidoPat":"Caamal 3", "apellidoMat":"Tamayo 3", "sexo":"Masculino", "fechaNacimiento":"2021-02-23T18:25:43.511Z", "numSeguro":"82937505721", "correo":"eric@gmail.com"},
+    {"nombre":"Eric 4", "apellidoPat":"Caamal 4", "apellidoMat":"Tamayo 4", "sexo":"Masculino", "fechaNacimiento":"2021-02-23T18:25:43.511Z", "numSeguro":"82937505721", "correo":"eric@gmail.com"},
+    {"nombre":"Eric 5", "apellidoPat":"Caamal 5", "apellidoMat":"Tamayo 5", "sexo":"Masculino", "fechaNacimiento":"2021-02-23T18:25:43.511Z", "numSeguro":"82937505721", "correo":"eric@gmail.com"},
+    {"nombre":"Eric 6", "apellidoPat":"Caamal 6", "apellidoMat":"Tamayo 6", "sexo":"Masculino", "fechaNacimiento":"2021-02-23T18:25:43.511Z", "numSeguro":"82937505721", "correo":"eric@gmail.com"}
+]
